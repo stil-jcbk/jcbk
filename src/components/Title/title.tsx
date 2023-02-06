@@ -9,8 +9,7 @@ function Title() {
       let moveValue = scrollTop / 2;
       const firstName = document.getElementById("firstname")!;
       const lastName = document.getElementById("lastname")!;
-      firstName.style.paddingRight =
-        Math.abs(220 + moveValue).toString() + "px";
+      firstName.style.paddingRight = moveValue.toString() + "px";
       lastName.style.paddingLeft = moveValue.toString() + "px";
 
       //changing text
@@ -45,10 +44,10 @@ function Title() {
       className="mt-48 flex flex-col items-center justify-center overflow-hidden"
     >
       <h1
-        className="flex flex-col font-work-sans text-6xl font-bold sm:text-8xl"
+        className="flex flex-col font-work-sans text-6xl font-bold italic sm:text-8xl"
         id="name"
       >
-        <span className="pr-[220px]" id="firstname">
+        <span id="firstname">
           JA<span id="changed-letters">KU</span>B
         </span>
         <span id="lastname">KONIECZNY</span>
