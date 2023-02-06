@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'work-sans': ['"Work Sans"', 'cursive']
+        'work-sans': ['"Work Sans"', ...defaultTheme.fontFamily.serif]
       }
     },
   },
