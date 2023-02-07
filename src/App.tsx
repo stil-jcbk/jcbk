@@ -6,7 +6,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-work-sans">
       <header>
         <Navbar />
       </header>

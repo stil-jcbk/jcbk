@@ -44,7 +44,7 @@ function Title() {
       className="mt-48 flex flex-col items-center justify-center overflow-hidden"
     >
       <h1
-        className="flex flex-col font-work-sans text-6xl font-bold italic sm:text-8xl"
+        className="flex flex-col text-6xl font-bold italic sm:text-8xl"
         id="name"
       >
         <span id="firstname">
