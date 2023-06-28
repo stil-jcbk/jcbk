@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import Navbar from "./components/Navbar/navbar";
 import Title from "./components/Title/title";
 import ProjectsSection from "./sections/ProjectsSection";
+import AboutMeSection from "./sections/AboutMeSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
       <Title />
       <ProjectsSection />
+      <AboutMeSection />
     </div>
   );
 }
