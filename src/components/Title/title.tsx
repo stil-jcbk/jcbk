@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Title() {
+export default function Hero() {
   useEffect(() => {
     const handleScroll = (event: any) => {
       let scrollTop = window.scrollY;
@@ -63,5 +63,3 @@ function Title() {
     </div>
   );
 }
-
-export default Title;

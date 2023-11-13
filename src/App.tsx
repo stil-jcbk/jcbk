@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import Navbar from "./components/Navbar/navbar";
-import Title from "./components/Title/title";
+import Hero from "./components/Title/title";
 import ProjectsSection from "./sections/ProjectsSection";
 import AboutMeSection from "./sections/AboutMeSection";
 
@@ -11,7 +11,7 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Title />
+      <Hero />
       <ProjectsSection />
       <AboutMeSection />
     </div>

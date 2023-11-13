@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./navbar.css";
 import Navbtn from "../Navbtn/navbtn";
 
-function Navbar() {
+export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById("navbar")!;
@@ -38,5 +38,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;

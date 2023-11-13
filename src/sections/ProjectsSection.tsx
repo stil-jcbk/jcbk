@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Project from "../components/Project/project";
 
-function ProjectsSection() {
+export default function ProjectsSection() {
   useEffect(() => {
     const handleScroll = () => {
       let scrollTop = window.scrollY;
@@ -36,5 +36,3 @@ function ProjectsSection() {
     </div>
   );
 }
-
-export default ProjectsSection;
