@@ -34,6 +34,7 @@ export default function Navbar() {
       <div className="ml-auto mr-6 flex flex-row gap-5">
         <Navbtn section="projects-section" name="projects" />
         <Navbtn section="aboutme-section" name="about me" />
+        <Navbtn section="contact-section" name="contact" />
       </div>
     </div>
   );
