@@ -19,12 +19,10 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div
