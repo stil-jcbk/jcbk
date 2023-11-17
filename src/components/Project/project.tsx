@@ -42,7 +42,6 @@ export default function Project(props: ProjectProps) {
   const [clicked, setClicked, element, setElement] = useOpenState();
 
   const handleClick = (type: "show" | "hide", e?: React.MouseEvent) => {
-    console.log(type);
     if (type === "show") {
       if (e) {
         setElement(e.currentTarget as HTMLDivElement);
