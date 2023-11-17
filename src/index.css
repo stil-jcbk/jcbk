@@ -6,6 +6,5 @@
 
 body {
   margin: 0;
-  height: 5000px;
   background: url(/public/noise.webp) 50% repeat;
 }
