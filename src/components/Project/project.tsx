@@ -124,9 +124,13 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
               </a>
             </div>
             <p className="desc text-lg">{props.desc}</p>
-            <div className="tools mt-4 flex gap-6">
+            <div className="tools mt-4 flex w-max gap-6 rounded-3xl bg-black bg-opacity-30 p-4">
               {props.tools.map((tool) => (
-                <img className="tool-icon h-10" src={`/${tool}.svg`} alt="" />
+                <img
+                  className="tool-icon h-10"
+                  src={`/assets/tools/${tool}.svg`}
+                  alt=""
+                />
               ))}
             </div>
             <a
