@@ -28,10 +28,30 @@ export default function ProjectsSection() {
         id="projects-container"
         className="grid grid-flow-row grid-cols-1 gap-10 sm:grid-cols-2 sm:px-2 md:grid-cols-2 md:px-10 lg:grid-cols-3 xl:px-40 2xl:px-60"
       >
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project
+          name="save.cash"
+          url="https://savecash.jcbk.pl/"
+          repo="savingmoney"
+          imgUrl="/savecash.png"
+          desc="Main goal of this project is to help people with saving their cash money. It provides an online balance counter and personalized saving goals."
+          tools={["react", "ts", "css", "firebase"]}
+        />
+        <Project
+          name="wbijam redesign"
+          url="https://wbijam.jcbk.pl/"
+          repo="wbijam-redesign"
+          imgUrl="/wbijam.png"
+          desc="I've redesigned a polish anime website to give it a better look. Original design can be found at: wbijam.pl"
+          tools={["react", "ts", "css"]}
+        />
+        <Project
+          name="gamehub"
+          url="https://gamehub.jcbk.pl/"
+          repo="gamehub"
+          imgUrl="/gamehub.png"
+          desc="I'm currently developing a website for 'GameHub,' a fictional company. The website is at its early stage with only landing page concept available. The main feature in development is seat booking, allowing users to reserve PC seats for specified durations to enjoy gaming sessions at the venue."
+          tools={["react", "ts", "sass", "firebase  "]}
+        />
       </div>
     </div>
   );
