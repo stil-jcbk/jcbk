@@ -126,6 +126,7 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
             <div className="tools mt-4 flex w-max gap-6 rounded-3xl bg-black bg-opacity-30 p-4">
               {props.tools.map((tool) => (
                 <img
+                  key="tool"
                   className="tool-icon h-10"
                   src={`/assets/tools/${tool}.svg`}
                   alt=""
