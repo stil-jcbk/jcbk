@@ -30,7 +30,7 @@ export default function ContactForm() {
       >
         <MailIconSVG /> jcbkdev@gmail.com
       </a>
-      <div className="flex max-w-md flex-col gap-4">
+      <div className="flex max-w-xs flex-col gap-4 md:max-w-md">
         <input
           className="border-b-2 border-black border-opacity-30 bg-transparent focus:border-opacity-100 focus-visible:outline-none"
           type="text"

@@ -95,22 +95,22 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
 
   return (
     <div className="project-screen-container fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-60">
-      <div className="project-screen h-[80vh] w-[80vw] rounded-3xl border-2 border-black">
+      <div className="project-screen h-[80vh] w-[80vw] overflow-scroll rounded-3xl border-2 border-black">
         <span
           onClick={() => {
             props.handleClick("hide");
           }}
-          className="close-btn absolute right-0 top-0 m-4 w-[40px] cursor-pointer select-none text-center font-work-sans text-4xl font-bold"
+          className="close-btn fixed right-0 top-0 z-10 m-4 w-[40px] cursor-pointer select-none text-center font-work-sans text-4xl font-bold text-white min-[900px]:text-black"
         >
           x
         </span>
-        <div className="flex h-full w-full">
+        <div className="flex h-full w-full flex-col min-[900px]:flex-row">
           <img
-            className="aspect-[9/16] h-full scale-95 rounded-3xl object-cover object-left-top"
+            className="aspect-[9/16] h-44 scale-95 rounded-3xl object-cover object-left-top min-[900px]:h-full"
             src={props.imgUrl}
             alt=""
           />
-          <div className="ml-10 mr-10 flex max-w-3xl flex-col justify-center">
+          <div className="ml-10 mr-10 flex max-w-3xl flex-col items-center justify-center p-10 min-[900px]:items-start min-[900px]:p-0">
             <div className="name mb-4">
               <h2 className="text-4xl font-extrabold">{props.name}</h2>
               <a
@@ -127,7 +127,7 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
               {props.tools.map((tool) => (
                 <img
                   key="tool"
-                  className="tool-icon h-10"
+                  className="tool-icon h-6 md:h-10"
                   src={`/assets/tools/${tool}.svg`}
                   alt=""
                 />

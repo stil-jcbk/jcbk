@@ -8,10 +8,10 @@ export default function AboutMeSection() {
   return (
     <div id="aboutme-section" className="mt-32">
       <h2 className="mb-5 text-center text-3xl">ABOUT ME</h2>
-      <div className="content flex justify-center gap-12">
+      <div className="content flex justify-center gap-12 px-10">
         <img
-          className="aspect-[9/16] h-auto w-1/4 object-contain"
-          src="/savecash.png"
+          className="hidden aspect-[9/16] h-auto w-1/4 max-w-xs object-cover opacity-70 lg:block"
+          src="/assets/other/photo.png"
           alt=""
         />
         <div className="right">
