@@ -14,6 +14,8 @@ export default function ProjectsSection() {
       }
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
   }, []);
 
