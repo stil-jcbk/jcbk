@@ -15,11 +15,7 @@ export default function ProjectsSection() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+  }, []);
 
   return (
     <div id="projects-section" className="mt-32 opacity-0 transition-opacity">
