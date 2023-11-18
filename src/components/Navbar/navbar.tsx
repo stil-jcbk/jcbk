@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <div
       id="navbar"
-      className="fixed top-0 flex h-[60px] w-full translate-y-[-60px] items-center transition-transform"
+      className="fixed top-0 z-50 flex h-[60px] w-full translate-y-[-60px] items-center transition-transform"
     >
       <div className="ml-auto mr-6 flex flex-row gap-5">
         <Navbtn section="projects-section" name="projects" />
