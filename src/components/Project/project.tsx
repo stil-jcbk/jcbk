@@ -128,7 +128,7 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
                 <img
                   key="tool"
                   className="tool-icon h-6 md:h-10"
-                  src={`/assets/tools/${tool}.svg`}
+                  src={`/assets/tools/${tool}.png`}
                   alt=""
                 />
               ))}

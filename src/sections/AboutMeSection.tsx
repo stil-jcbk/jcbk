@@ -27,7 +27,7 @@ export default function AboutMeSection() {
               {tools.front.map((tool) => (
                 <img
                   className="mb-2 w-11"
-                  src={`/assets/tools/${tool}.svg`}
+                  src={`/assets/tools/${tool}.png`}
                   alt={`${tool} icon`}
                 />
               ))}
@@ -37,7 +37,7 @@ export default function AboutMeSection() {
               {tools.back.map((tool) => (
                 <img
                   className="mb-2 h-10 "
-                  src={`/assets/tools/${tool}.svg`}
+                  src={`/assets/tools/${tool}.png`}
                   alt={`${tool} icon`}
                 />
               ))}
@@ -47,7 +47,7 @@ export default function AboutMeSection() {
               {tools.other.map((tool) => (
                 <img
                   className="mb-2 h-10 "
-                  src={`/assets/tools/${tool}.svg`}
+                  src={`/assets/tools/${tool}.png`}
                   alt={`${tool} icon`}
                 />
               ))}
