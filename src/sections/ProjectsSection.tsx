@@ -29,6 +29,7 @@ export default function ProjectsSection() {
         <Project
           name="save.cash"
           url="https://savecash.jcbk.pl/"
+          additional="test account: test@jcbk.pl testpass"
           repo="savingmoney"
           imgUrl="/assets/projects/savecash.png"
           desc="Main goal of this project is to help people with saving their cash money. It provides an online balance counter and personalized saving goals. For me it made saving much easier."

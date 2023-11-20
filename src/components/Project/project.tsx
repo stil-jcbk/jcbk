@@ -32,6 +32,7 @@ const useOpenState: () => [
 type ProjectProps = {
   name: string;
   url: string;
+  additional?: string;
   repo: string;
   imgUrl: string;
   desc: string;
@@ -59,6 +60,7 @@ export default function Project(props: ProjectProps) {
         <ProjectScreen
           name={props.name}
           url={props.url}
+          additional={props.additional}
           repo={props.repo}
           imgUrl={props.imgUrl}
           desc={props.desc}
@@ -121,6 +123,7 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
               >
                 {props.url}
               </a>
+              <p className="italic opacity-60">{props.additional}</p>
             </div>
             <p className="desc text-lg">{props.desc}</p>
             <div className="tools mt-4 flex w-max gap-6 rounded-3xl bg-black bg-opacity-30 p-4">
