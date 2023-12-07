@@ -97,7 +97,7 @@ function ProjectScreen(props: ProjectScreenProps & ProjectProps) {
 
   return (
     <div className="project-screen-container fixed top-0 left-0 z-[99] flex h-full w-full items-center justify-center bg-black bg-opacity-60">
-      <div className="project-screen h-[80vh] w-[80vw] overflow-scroll rounded-3xl border-2 border-black">
+      <div className="project-screen h-[80vh] w-[80vw] overflow-auto rounded-3xl border-2 border-black">
         <span
           onClick={() => {
             props.handleClick("hide");
